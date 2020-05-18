@@ -1,8 +1,8 @@
 package main
 
 import (
-	"testing"
 	"github.com/google/go-cmp/cmp"
+	"testing"
 )
 
 func TestBinaryTreeZigzagTravelsal(t *testing.T) {
@@ -22,7 +22,9 @@ func TestBinaryTreeZigzagTravelsal(t *testing.T) {
 
 func insertNode(s []interface{}, root *TreeNode, i int, l int) *TreeNode {
 	if i < l && s[i] != nil {
-		root = &TreeNode{Val: (s[i].(int))}
+		root = &TreeNode{
+			Val: (s[i].(int)),
+		}
 		root.Left = insertNode(s, root.Left, 2*i+1, l)
 		root.Right = insertNode(s, root.Right, 2*i+2, l)
 

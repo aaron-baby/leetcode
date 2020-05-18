@@ -1,9 +1,9 @@
 package main
 
 func validPalindrome(s string) bool {
-	var i, j =0, len(s)-1
-	for i<j{
-		if s[i] == s[j]{
+	var i, j = 0, len(s) - 1
+	for i < j {
+		if s[i] == s[j] {
 			i++
 			j--
 		} else {
@@ -16,8 +16,8 @@ func validPalindrome(s string) bool {
 }
 
 func isPalindrome(s string) bool {
-	var i, j =0, len(s)-1
-	for i<j {
+	var i, j = 0, len(s) - 1
+	for i < j {
 		if s[i] != s[j] {
 			return false
 		}

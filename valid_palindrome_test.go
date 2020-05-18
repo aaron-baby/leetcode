@@ -6,7 +6,7 @@ func TestValidPalindrome(t *testing.T) {
 	cases := map[string]bool{
 		"abc":  false,
 		"abca": true,
-		"a": true,
+		"a":    true,
 	}
 
 	for s, want := range cases {
