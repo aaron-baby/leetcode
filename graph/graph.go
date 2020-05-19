@@ -2,39 +2,42 @@ package graph
 
 type (
 	ItemGraph struct {
-		children     []*ItemGraph
-		valueItem    map[string]ItemGraph
+		Children     []*ItemGraph
+		ValueItem    map[string]ItemGraph
 		Name         string
-		dependencies int
+		Dependencies int
 	}
 
 	Graph struct {
-		nodes     []ItemGraph
-		valueItem map[string]ItemGraph
+		Nodes     []*ItemGraph
+		ValueItem map[string]ItemGraph
 	}
 )
 
-func (g *Graph) getOrCreateNode(name string) ItemGraph {
-	if node, ok := g.valueItem[name]; ok {
+func (g *Graph) GetOrCreateNode(name string) ItemGraph {
+	if node, ok := g.ValueItem[name]; ok {
 		return node
 	}
-	node := ItemGraph{Name: name}
-	g.nodes = append(g.nodes, node)
-	g.valueItem[name] = node
+	node := ItemGraph{
+		Name:      name,
+		ValueItem: make(map[string]ItemGraph),
+	}
+	g.Nodes = append(g.Nodes, &node)
+	g.ValueItem[name] = node
 
 	return node
 }
 
-func (g *Graph) addEdge(startName string, endName string) {
-	start := g.getOrCreateNode(startName)
-	end := g.getOrCreateNode(endName)
+func (g *Graph) AddEdge(startName string, endName string) {
+	start := g.GetOrCreateNode(startName)
+	end := g.GetOrCreateNode(endName)
 	start.AddNeighbor(end)
 }
 
 func (i *ItemGraph) AddNeighbor(item ItemGraph) {
-	if _, ok := i.valueItem[item.Name]; !ok {
-		i.children = append(i.children, &item)
-		i.valueItem[item.Name] = item
-		i.dependencies++
+	if _, ok := i.ValueItem[item.Name]; !ok {
+		i.Children = append(i.Children, &item)
+		i.ValueItem[item.Name] = item
+		i.Dependencies++
 	}
 }
