@@ -1,31 +1,50 @@
 package graph
 
+import (
+	"fmt"
+	"strconv"
+)
+
 type (
-	ItemGraph struct {
-		Children     []*ItemGraph
-		ValueItem    map[string]ItemGraph
-		Name         string
-		Dependencies int
+	Vertex struct {
+		Adjacencies []*Vertex
+		Name        string
+		// The number of edges leaving a vertex is its out-degree,
+		// and the number of edges entering is the in-degree.
+		InDegree int
 	}
 
 	Graph struct {
-		Nodes     []*ItemGraph
-		ValueItem map[string]ItemGraph
+		Vertices  []*Vertex
+		ValueItem map[string]*Vertex
 	}
 )
 
-func (g *Graph) GetOrCreateNode(name string) ItemGraph {
+func (g *Graph) GetOrCreateNode(name string) *Vertex {
 	if node, ok := g.ValueItem[name]; ok {
 		return node
 	}
-	node := ItemGraph{
-		Name:      name,
-		ValueItem: make(map[string]ItemGraph),
+	node := Vertex{
+		Name: name,
 	}
-	g.Nodes = append(g.Nodes, &node)
-	g.ValueItem[name] = node
+	g.Vertices = append(g.Vertices, &node)
+	g.ValueItem[name] = &node
 
-	return node
+	return &node
+}
+
+// AddEdge adds an edge to the graph
+func (g *Graph) String() {
+	s := ""
+	for i := 0; i < len(g.Vertices); i++ {
+		s += g.Vertices[i].Name + "("+ strconv.Itoa(g.Vertices[i].InDegree) +") -> "
+		near := g.Vertices[i].Adjacencies
+		for j := 0; j < len(near); j++ {
+			s += near[j].Name + " "
+		}
+		s += "\n"
+	}
+	fmt.Println(s)
 }
 
 func (g *Graph) AddEdge(startName string, endName string) {
@@ -34,10 +53,7 @@ func (g *Graph) AddEdge(startName string, endName string) {
 	start.AddNeighbor(end)
 }
 
-func (i *ItemGraph) AddNeighbor(item ItemGraph) {
-	if _, ok := i.ValueItem[item.Name]; !ok {
-		i.Children = append(i.Children, &item)
-		i.ValueItem[item.Name] = item
-		i.Dependencies++
-	}
+func (i *Vertex) AddNeighbor(item *Vertex) {
+	i.Adjacencies = append(i.Adjacencies, item)
+	item.InDegree++
 }

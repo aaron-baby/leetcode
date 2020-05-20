@@ -4,7 +4,7 @@ import "gitlab.com/aaw/leetcode/graph"
 
 func buildGraph(projects []string, dependencies [][]string) graph.Graph {
 	g := graph.Graph{
-		ValueItem: make(map[string]graph.ItemGraph),
+		ValueItem: make(map[string]*graph.Vertex),
 	}
 	for _, name := range projects {
 		g.GetOrCreateNode(name)
@@ -16,36 +16,25 @@ func buildGraph(projects []string, dependencies [][]string) graph.Graph {
 	return g
 }
 
-func OrderProjects(nodes []*graph.ItemGraph) []*graph.ItemGraph {
-	order := make([]*graph.ItemGraph, len(nodes))
-	endOffset := addNonDependent(order, nodes, 0)
-
-	toBeProcessed := 0
-	for toBeProcessed < len(order) {
-		current := order[toBeProcessed]
-
-		// circular dependency
-		if current == nil {
-			return order
+func OrderProjects(nodes []*graph.Vertex) []*graph.Vertex {
+	// Create a queue and enqueue all vertices with
+	// indegree 0
+	var q, order []*graph.Vertex
+	for _, n := range nodes {
+		if n.InDegree == 0 {
+			q = append(q, n)
 		}
-		// decrement dependencies
-		for _, child := range current.Children {
-			child.Dependencies--
+	}
+	for len(q) > 0 {
+		d, q := q[len(q)-1], q[:len(q)-1]
+		order = append(order, d)
+		for _, child := range d.Adjacencies {
+			child.InDegree--
+			if child.InDegree == 0 {
+				q = append(q, child)
+			}
 		}
-		endOffset = addNonDependent(order, current.Children, endOffset)
-		toBeProcessed++
 	}
 
 	return order
-}
-
-func addNonDependent(order []*graph.ItemGraph, nodes []*graph.ItemGraph, offset int) int {
-	for _, n := range nodes {
-		if n.Dependencies == 0 {
-			order[offset] = n
-			offset++
-		}
-	}
-
-	return offset
 }
