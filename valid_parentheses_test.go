@@ -10,7 +10,7 @@ func TestValidParentheses(t *testing.T) {
 		"([)]":   false,
 		"{[]}":   true,
 		"]":      false,
-		"[])":      false,
+		"[])":    false,
 	}
 	for s, want := range testCases {
 		got := isValid(s)
