@@ -8,6 +8,8 @@ package main
  *     Right *TreeNode
  * }
  */
+var nodeHeight = make(map[*TreeNode]int)
+
 func diameterOfBinaryTree(root *TreeNode) int {
 	if root == nil {
 		return 0
@@ -22,6 +24,10 @@ func height(node *TreeNode) int {
 	if node == nil {
 		return 0
 	}
-
-	return max(height(node.Left), height(node.Right)) + 1
+	_, ok := nodeHeight[node]
+	if !ok {
+		nodeHeight[node] = max(height(node.Left), height(node.Right)) + 1
+	}
+	
+	return nodeHeight[node]
 }
