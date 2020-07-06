@@ -28,6 +28,6 @@ func height(node *TreeNode) int {
 	if !ok {
 		nodeHeight[node] = max(height(node.Left), height(node.Right)) + 1
 	}
-	
+
 	return nodeHeight[node]
 }

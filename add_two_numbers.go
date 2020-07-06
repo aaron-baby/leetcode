@@ -1,11 +1,6 @@
 package main
 
-type (
-	ListNode struct {
-		Val  int
-		Next *ListNode
-	}
-)
+import "gitlab.com/aaw/leetcode/ds"
 
 /**
  * Definition for singly-linked list.
@@ -14,12 +9,12 @@ type (
  *     Next *ListNode
  * }
  */
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbers(l1 *ds.ListNode, l2 *ds.ListNode) *ds.ListNode {
 	if l1 == nil && l2 == nil {
 		return nil
 	}
 	var carry, sum int
-	var result, temp, prev *ListNode
+	var result, temp, prev *ds.ListNode
 	for l1 != nil || l2 != nil {
 		sum = carry
 		if l1 != nil {
@@ -34,7 +29,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		carry = sum / 10
 		// reminder
 		sum = sum % 10
-		temp = &ListNode{Val: sum}
+		temp = &ds.ListNode{Val: sum}
 		if result == nil {
 			result = temp
 		} else {
@@ -43,7 +38,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		prev = temp
 	}
 	if carry > 0 {
-		temp.Next = &ListNode{Val: carry}
+		temp.Next = &ds.ListNode{Val: carry}
 	}
 
 	return result
