@@ -1,5 +1,7 @@
 package main
 
+import "gitlab.com/aaw/leetcode/lib"
+
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -17,7 +19,7 @@ func diameterOfBinaryTree(root *TreeNode) int {
 	lHeight, rHeight := height(root.Left), height(root.Right)
 	lDiameter, rDiameter := diameterOfBinaryTree(root.Left), diameterOfBinaryTree(root.Right)
 
-	return max(lHeight+rHeight, max(lDiameter, rDiameter))
+	return lib.Max(lHeight+rHeight, lib.Max(lDiameter, rDiameter))
 }
 
 func height(node *TreeNode) int {
@@ -26,7 +28,7 @@ func height(node *TreeNode) int {
 	}
 	_, ok := nodeHeight[node]
 	if !ok {
-		nodeHeight[node] = max(height(node.Left), height(node.Right)) + 1
+		nodeHeight[node] = lib.Max(height(node.Left), height(node.Right)) + 1
 	}
 
 	return nodeHeight[node]

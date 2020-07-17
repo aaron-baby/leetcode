@@ -1,18 +1,6 @@
 package main
 
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
+import "gitlab.com/aaw/leetcode/lib"
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	// let nums1 be small slice
@@ -36,7 +24,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 			} else if j == 0 {
 				maxLeft = nums1[i-1]
 			} else {
-				maxLeft = max(nums1[i-1], nums2[j-1])
+				maxLeft = lib.Max(nums1[i-1], nums2[j-1])
 			}
 			if (m+n)%2 == 1 {
 				return float64(maxLeft)
@@ -48,7 +36,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 			} else if j == n {
 				minRight = nums1[i]
 			} else {
-				minRight = min(nums1[i], nums2[j])
+				minRight = lib.Min(nums1[i], nums2[j])
 			}
 			return float64(maxLeft+minRight) / 2.0
 		}
