@@ -1,4 +1,4 @@
-package main
+package backtracking
 
 import (
 	"github.com/google/go-cmp/cmp"

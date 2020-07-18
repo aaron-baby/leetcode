@@ -1,7 +1,8 @@
-package main
+package backtracking
 
 var leftDiagonal, rightDiagonal, cl []int
-
+// 51. N-Queens
+// https://leetcode.com/problems/n-queens/
 func solveNQueens(n int) [][]string {
 	slt := [][]string{}
 	leftDiagonal, rightDiagonal, cl = make([]int, 2*n-1), make([]int, 2*n-1), make([]int, n)
