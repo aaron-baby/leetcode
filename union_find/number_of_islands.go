@@ -1,4 +1,4 @@
-package main
+package union_find
 
 //200. Number of Islands
 func numIslands(grid [][]byte) int {

@@ -1,6 +1,8 @@
-package main
+package union_find
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestNumIslands(t *testing.T) {
 	grid := [][]byte{
