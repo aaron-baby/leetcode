@@ -1,6 +1,8 @@
-package main
+package tree
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestDiameterOfBinaryTree(t *testing.T) {
 	root := NewTreeNode(1)
@@ -14,11 +16,5 @@ func TestDiameterOfBinaryTree(t *testing.T) {
 
 	if got != want {
 		t.Errorf("got %d want %d", got, want)
-	}
-}
-
-func NewTreeNode(val int) *TreeNode {
-	return &TreeNode{
-		Val: val,
 	}
 }

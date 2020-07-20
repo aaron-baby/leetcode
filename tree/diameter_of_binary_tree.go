@@ -1,6 +1,8 @@
-package main
+package tree
 
-import "gitlab.com/aaw/leetcode/lib"
+import (
+	"gitlab.com/aaw/leetcode/lib"
+)
 
 /**
  * Definition for a binary tree node.
