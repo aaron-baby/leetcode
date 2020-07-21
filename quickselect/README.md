@@ -28,7 +28,7 @@ QuickSelect(A, k)
 
 | #        | Title                                                    | Solution                                    |
 | -------- | -------------------------------------------------------- | ------------------------------------------- |
-| 215      | [Kth Largest Element in an Array](kth-largest-element)   |   [Go](kth_largest_element_in_an_array.go)  |
+| 215      | [Kth Largest Element in an Array][kth-largest-element]   |   [Go](kth_largest_element_in_an_array.go)  |
 
 
 [kth-largest-element]: https://leetcode.com/problems/kth-largest-element-in-an-array/

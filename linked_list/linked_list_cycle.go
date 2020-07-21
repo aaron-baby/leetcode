@@ -1,6 +1,4 @@
-package main
-
-import "gitlab.com/aaw/leetcode/ds"
+package linked_list
 
 /**
  * Definition for singly-linked list.
@@ -9,7 +7,7 @@ import "gitlab.com/aaw/leetcode/ds"
  *     Next *ListNode
  * }
  */
-func hasCycle(head *ds.ListNode) bool {
+func hasCycle(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return false
 	}

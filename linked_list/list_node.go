@@ -1,4 +1,4 @@
-package ds
+package linked_list
 
 import (
 	"strconv"

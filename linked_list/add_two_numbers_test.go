@@ -1,22 +1,21 @@
-package main
+package linked_list
 
 import (
 	"fmt"
-	"gitlab.com/aaw/leetcode/ds"
 	"testing"
 )
 
 func TestAddTwoNumbers(t *testing.T) {
-	l1 := &ds.ListNode{Val: 2}
-	l1.Next = &ds.ListNode{
+	l1 := &ListNode{Val: 2}
+	l1.Next = &ListNode{
 		Val:  4,
-		Next: &ds.ListNode{Val: 3},
+		Next: &ListNode{Val: 3},
 	}
 
-	l2 := &ds.ListNode{Val: 5}
-	l2.Next = &ds.ListNode{
+	l2 := &ListNode{Val: 5}
+	l2.Next = &ListNode{
 		Val:  6,
-		Next: &ds.ListNode{Val: 4},
+		Next: &ListNode{Val: 4},
 	}
 
 	got := addTwoNumbers(l1, l2)

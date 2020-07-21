@@ -1,20 +1,13 @@
-package main
+package linked_list
 
-import "gitlab.com/aaw/leetcode/ds"
-
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func addTwoNumbers(l1 *ds.ListNode, l2 *ds.ListNode) *ds.ListNode {
+// 2. Add Two Numbers
+// https://leetcode.com/problems/add-two-numbers/
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil && l2 == nil {
 		return nil
 	}
 	var carry, sum int
-	var result, temp, prev *ds.ListNode
+	var result, temp, prev *ListNode
 	for l1 != nil || l2 != nil {
 		sum = carry
 		if l1 != nil {
@@ -29,7 +22,7 @@ func addTwoNumbers(l1 *ds.ListNode, l2 *ds.ListNode) *ds.ListNode {
 		carry = sum / 10
 		// reminder
 		sum = sum % 10
-		temp = &ds.ListNode{Val: sum}
+		temp = &ListNode{Val: sum}
 		if result == nil {
 			result = temp
 		} else {
@@ -38,7 +31,7 @@ func addTwoNumbers(l1 *ds.ListNode, l2 *ds.ListNode) *ds.ListNode {
 		prev = temp
 	}
 	if carry > 0 {
-		temp.Next = &ds.ListNode{Val: carry}
+		temp.Next = &ListNode{Val: carry}
 	}
 
 	return result
