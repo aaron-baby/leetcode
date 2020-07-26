@@ -1,6 +1,8 @@
-package main
+package array
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestFindMedianSortedArrays(t *testing.T) {
 	nums1 := []int{1, 2}
