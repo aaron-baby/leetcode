@@ -2,11 +2,21 @@
 | -------- | -------------------------------------------------------- | ------------------------------------------- |
 | 62.      | [Unique Paths][unique-paths]                             |   [Go](unique_paths.go)                     |
 | 221.     | [Maximal Square][maximal-square]                         |   [Go](maximal_square.go)                   |
+| 279.     | [Perfect Squares][perfect-squares]                       |   [Go](perfect_squares.go)                  |
 | 416.     | [Partition Equal Subset Sum][partition-equal-subset-sum] |   [Go](partition_equal_subset_sum.go)       |
 
 [unique-paths]: https://leetcode.com/problems/unique-paths/
 [maximal-square]: https://leetcode.com/problems/maximal-square/
+[perfect-squares]: https://leetcode.com/problems/perfect-squares/
 [partition-equal-subset-sum]: https://leetcode.com/problems/partition-equal-subset-sum/
+
+## 279. Perfect Squares
+计算每一个小于n的平方根组合
+
+状态转移方程
+
+    temp := x * x
+    dp[i] = Min(dp[i], 1+dp[i-temp])
 
 ## 416. Partition Equal Subset Sum
 维护一个二维数组，行是从0到half sum，列是从空集依次增加一个元素到整个数组。
