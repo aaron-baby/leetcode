@@ -4,6 +4,6 @@
 
 | Title                        | Solution                           |
 | ---------------------------- | ---------------------------------- |
-| [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Go](letter_combinations.go)  |
-| [39. Combination Sum](https://leetcode.com/problems/combination-sum/)                                             | [Go](combination_sum.go)      |
-| [51. N-Queens](https://leetcode.com/problems/n-queens/)                                                           | [Go](n_queens.go)             |
+| 17. [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Go](letter_combinations.go)  |
+| 39. [Combination Sum](https://leetcode.com/problems/combination-sum/)                                             | [Go](combination_sum.go)      |
+| 51. [N-Queens](https://leetcode.com/problems/n-queens/)                                                           | [Go](n_queens.go)             |
