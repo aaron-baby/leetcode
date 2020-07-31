@@ -19,16 +19,3 @@ func TestBinaryTreeZigzagTravelsal(t *testing.T) {
 		t.Errorf("got %v want %v given", got, want)
 	}
 }
-
-func insertNode(s []interface{}, root *TreeNode, i int, l int) *TreeNode {
-	if i < l && s[i] != nil {
-		root = &TreeNode{
-			Val: (s[i].(int)),
-		}
-		root.Left = insertNode(s, root.Left, 2*i+1, l)
-		root.Right = insertNode(s, root.Right, 2*i+2, l)
-
-	}
-
-	return root
-}
