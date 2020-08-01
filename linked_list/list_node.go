@@ -37,3 +37,32 @@ func (l *ListNode) String() string {
 
 	return s
 }
+
+func sliceToLinkedList(s []int) *ListNode {
+	var n, l *ListNode
+	if len(s) == 0 {
+		return n
+	}
+	for i := len(s) - 1; i >= 0; i-- {
+		n = &ListNode{
+			Val:  s[i],
+			Next: l,
+		}
+		l = n
+	}
+	return n
+}
+
+func CompareLinkedList(a, b *ListNode) bool {
+	if a == nil && b == nil {
+		return true
+	}
+	if a != nil && b != nil {
+		if a.Val != b.Val {
+			return false
+		}
+		return CompareLinkedList(a.Next, b.Next)
+	}
+
+	return false
+}

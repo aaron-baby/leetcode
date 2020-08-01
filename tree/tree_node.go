@@ -14,7 +14,6 @@ func NewTreeNode(val int) *TreeNode {
 
 func (t *TreeNode) String() {
 	//h := height(t)
-
 }
 
 func SameTree(a *TreeNode, b *TreeNode) bool {
