@@ -9,6 +9,7 @@
 | Easy     | 226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)    | [Go](invert_binary_tree.go)           |
 | Medium   | 230. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)                      | [Go](kth_smallest_element_in_a_bst.go)  |
 | Medium   | 236. [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)  | [Go](lca_of_a_binary_tree.go)           |
+| Easy     | 501. [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)                  | [Go](find_mode.go)                      |
 | Easy     | 543. [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                  | [Go](diameter_of_binary_tree.go)        |
 
 [binary-tree-inorder-traversal]: https://leetcode.com/problems/binary-tree-inorder-traversal/
@@ -23,3 +24,8 @@ in-order traversal retrieves the keys in ascending sorted order.
 ## 236. Lowest Common Ancestor of a Binary Tree
 > In graph theory and computer science, the lowest common ancestor (LCA) of two nodes v and w in a tree or directed acyclic graph (DAG) T 
 > is the lowest (i.e. deepest) node that has both v and w as descendants
+
+## 501. Find Mode in Binary Search Tree
+> In computer science, a binary search tree (BST), also called an ordered or sorted binary tree, 
+>
+> is a rooted binary tree whose internal nodes each store a key greater than all the keys in the node's left subtree and less than those in its right subtree.
