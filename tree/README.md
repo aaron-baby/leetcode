@@ -9,7 +9,7 @@
 | Easy     | 226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)    | [Go](invert_binary_tree.go)           |
 | Medium   | 230. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)                      | [Go](kth_smallest_element_in_a_bst.go)  |
 | Medium   | 236. [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)  | [Go](lca_of_a_binary_tree.go)           |
-| Easy     | 501. [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)                  | [Go](find_mode.go)                      |
+| Easy     | 501. [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)                  | [Go](find_mode.go)<br>[TypeScript](src/tree/find_mode.ts)               |
 | Easy     | 543. [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                  | [Go](diameter_of_binary_tree.go)        |
 
 [binary-tree-inorder-traversal]: https://leetcode.com/problems/binary-tree-inorder-traversal/

@@ -5,7 +5,7 @@ func wordBreak(s string, wordDict []string) bool {
 	dp[0] = true
 
 	for i := range s {
-		// word break lenght "","l","le"
+		// word break length "","l","le"
 		if !dp[i] {
 			continue
 		}
