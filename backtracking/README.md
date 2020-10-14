@@ -10,6 +10,7 @@
 | Medium | 47. [Permutations II](https://leetcode.com/problems/permutations-ii/)                                             | [Go](permutations-ii.go)      |
 | Hard   | 51. [N-Queens](https://leetcode.com/problems/n-queens/)                                                           | [Go](n_queens.go)             |
 | Hard   | 52. [N-Queens II](https://leetcode.com/problems/n-queens-ii/)                                                     | [Go](n-queens-ii.go)          |
+| Hard   | 996. [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)                      | [Go](996.number-of-squareful-arrays.go)          |
 
 ## 52. N-Queens II
 Basically, we have to ensure 4 things:
