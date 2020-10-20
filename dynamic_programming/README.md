@@ -1,6 +1,7 @@
 | #        | Title                                                    | Solution                                    |
 | -------- | -------------------------------------------------------- | ------------------------------------------- |
-| Medium   | 5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)       |   [Go](5.longest-palindromic-substring.go)        |
+| Medium   | 5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)       |   [Go](5.longest-palindromic-substring.go)       |
+| Hard     | 44. [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)                              |   [Go](44.wildcard-matching.go)                  |
 | 62.      | [Unique Paths][unique-paths]                             |   [Go](unique_paths.go)                     |
 | 221.     | [Maximal Square][maximal-square]                         |   [Go](maximal_square.go)                   |
 | 279.     | [Perfect Squares][perfect-squares]                       |   [Go](perfect_squares.go)                  |
