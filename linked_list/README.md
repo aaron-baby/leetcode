@@ -7,10 +7,11 @@
 | Easy    | 141. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                 |   [Go](linked_list_cycle.go)      |
 | 142.    | [Linked List Cycle II][linked-list-cycle-ii]             |   [Go](linked-list-cycle-ii.go)             |
 | Medium  | 143. [Reorder List](https://leetcode.com/problems/reorder-list/)                           |   [Go](reorder_list.go)           |
-| Medium  | 148. [Sort List](https://leetcode.com/problems/sort-list/)                                 |   [Go](148.sort-list.go)          |
+| Medium  | 147. [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)             |   [Go](147.insertion-sort-list.go)           |
+| Medium  | 148. [Sort List](https://leetcode.com/problems/sort-list/)                                 |   [Go](148.sort-list.go)                     |
 | Easy    | 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)             |   [Go](reverse_linked_list.go)    |
 | Easy    | 234. [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)       |   [Go](palindrome_linked_list.go) |
-| Easy    | 876. [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)       |   [Go](876.middle-of-the-linked-list.go) |
+| Easy    | 876. [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |   [Go](876.middle-of-the-linked-list.go)     |
 
 [add-two-numbers]: https://leetcode.com/problems/add-two-numbers/
 [remove-nth-node]: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
