@@ -18,7 +18,7 @@ func TestExist(t *testing.T) {
 		t.Errorf("got %v want %v given", got, want)
 	}
 
-	board = [][]byte{{'C','A','A'},{'A','A','A'},{'B','C','D'}}
+	board = [][]byte{{'C', 'A', 'A'}, {'A', 'A', 'A'}, {'B', 'C', 'D'}}
 	word = "AAB"
 	got = exist(board, word)
 	want = true
