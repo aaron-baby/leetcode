@@ -1,6 +1,7 @@
 package backtracking
 
 import (
+	"fmt"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -16,6 +17,7 @@ func TestCombinationSum(t *testing.T) {
 	assert := assert.New(t)
 	assert.ElementsMatch(got, want)
 
+	fmt.Println("=====")
 	candidates = []int{2, 3, 5}
 	target = 8
 	got = combinationSum(candidates, target)
