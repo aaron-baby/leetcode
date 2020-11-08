@@ -2,15 +2,15 @@
 | -------- | -------------------------------------------------------- | ------------------------------------------- |
 | Medium   | 5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)       |   [Go](5.longest-palindromic-substring.go)       |
 | Hard     | 44. [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)                              |   [Go](44.wildcard-matching.go)                  |
-| 62.      | [Unique Paths][unique-paths]                             |   [Go](unique_paths.go)                     |
-| Medium   | 63. [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                                  |   [Go](63.unique-paths-ii.go)                    |
-| Medium   | 64. [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)                                |   [Go](64.minimum-path-sum.go)                    |
+| Medium   | 62.[Unique Paths](https://leetcode.com/problems/unique-paths/)                                         |   [Go](unique_paths.go)                     |
+| Medium   | 63. [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                                  |   [Go](63.unique-paths-ii.go)                |
+| Medium   | 64. [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)                                |   [Go](64.minimum-path-sum.go)               |
+| Medium   | 91. [Decode Ways](https://leetcode.com/problems/decode-ways/)                                          |   [Go](91.decode-ways.go)                    |
 | 221.     | [Maximal Square][maximal-square]                         |   [Go](maximal_square.go)                   |
 | 279.     | [Perfect Squares][perfect-squares]                       |   [Go](perfect_squares.go)                  |
 | Hard     | 403. [Frog Jump](https://leetcode.com/problems/frog-jump/)   |   [Go](frog_jump.go)                    |
 | 416.     | [Partition Equal Subset Sum][partition-equal-subset-sum] |   [Go](partition_equal_subset_sum.go)       |
 
-[unique-paths]: https://leetcode.com/problems/unique-paths/
 [maximal-square]: https://leetcode.com/problems/maximal-square/
 [perfect-squares]: https://leetcode.com/problems/perfect-squares/
 [partition-equal-subset-sum]: https://leetcode.com/problems/partition-equal-subset-sum/
@@ -49,3 +49,10 @@ p(i, j)表示是否能从集合{ x1, ..., xj }里找到一个子集的和等于s
 | 9   |     |     |       |          |            |
 | 10  |     |     |       |          |            |
 | 11  |     |     |       |          |            |
+
+## 91. Decode Ways
+**解题思路**
+
+如果最后一个数字是1到9，说明该数位可以被转成字符，状态转移为前i-1个数字的解法。
+
+最后两个数位的值在10到26之间，说明两个数字的组合可行，累加dp[i-2]的解法
