@@ -5,6 +5,7 @@
 | Diffct   | Title                                      | Solution                           |
 | -------- | ------------------------------------------ | ---------------------------------- |
 | Medium   | 94. [Binary Tree Inorder Traversal][binary-tree-inorder-traversal]              | [Go](inorder_travesal.go)             |
+| Medium   | 98. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                           | [Go](98.validate-binary-search-tree.go)             |
 | Medium   | 103. [Binary Tree Zigzag Level Order Traversal][zigzag-level-order-traversal]   | [Go](binary_tree_zigzag_travelsal.go) |
 | Easy     | 226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)    | [Go](invert_binary_tree.go)           |
 | Medium   | 230. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)                      | [Go](kth_smallest_element_in_a_bst.go)  |
@@ -28,4 +29,4 @@ in-order traversal retrieves the keys in ascending sorted order.
 ## 501. Find Mode in Binary Search Tree
 > In computer science, a binary search tree (BST), also called an ordered or sorted binary tree, 
 >
-> is a rooted binary tree whose internal nodes each store a key greater than all the keys in the node's left subtree and less than those in its right subtree.
+> is a rooted binary tree whose internal nodes each store a key **greater than all the keys in the node's left subtree** and less than those in its right subtree.
