@@ -1,4 +1,4 @@
-package main
+package hash_table
 
 import (
 	"github.com/google/go-cmp/cmp"

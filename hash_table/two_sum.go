@@ -1,4 +1,4 @@
-package main
+package hash_table
 
 func twoSum(nums []int, target int) []int {
 	// hash that remember element index
