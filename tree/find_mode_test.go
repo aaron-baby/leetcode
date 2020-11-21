@@ -1,7 +1,6 @@
 package tree
 
 import (
-	"fmt"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -28,7 +27,6 @@ func TestFindMode(t *testing.T) {
 	want = []int{2, 1}
 	a.ElementsMatch(got, want)
 
-	fmt.Println("###")
 	s = []interface{}{2, 1}
 	r2 = insertNode(s, r2, 0, len(s))
 	got = findMode(r2)
