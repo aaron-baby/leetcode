@@ -5,13 +5,13 @@
 | Medium   | 62.[Unique Paths](https://leetcode.com/problems/unique-paths/)                                         |   [Go](unique_paths.go)                     |
 | Medium   | 63. [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                                  |   [Go](63.unique-paths-ii.go)                |
 | Medium   | 64. [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)                                |   [Go](64.minimum-path-sum.go)               |
-| Medium   | 91. [Decode Ways](https://leetcode.com/problems/decode-ways/)                                          |   [Go](91.decode-ways.go)                    |
-| 221.     | [Maximal Square][maximal-square]                         |   [Go](maximal_square.go)                   |
-| 279.     | [Perfect Squares][perfect-squares]                       |   [Go](perfect_squares.go)                  |
-| Hard     | 403. [Frog Jump](https://leetcode.com/problems/frog-jump/)   |   [Go](frog_jump.go)                    |
-| 416.     | [Partition Equal Subset Sum][partition-equal-subset-sum] |   [Go](partition_equal_subset_sum.go)       |
+| Medium   | 91. [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                |   [Go](91.decode-ways.go)                         |
+| Easy     | 122. [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) |   [Go](122.best-time-to-buy-and-sell-stock-ii.go) |
+| Medium   | 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)                                         |   [Go](maximal_square.go)                     |
+| 279.     | [Perfect Squares][perfect-squares]                           |   [Go](perfect_squares.go)                    |
+| Hard     | 403. [Frog Jump](https://leetcode.com/problems/frog-jump/)   |   [Go](frog_jump.go)                          |
+| 416.     | [Partition Equal Subset Sum][partition-equal-subset-sum]     |   [Go](partition_equal_subset_sum.go)         |
 
-[maximal-square]: https://leetcode.com/problems/maximal-square/
 [perfect-squares]: https://leetcode.com/problems/perfect-squares/
 [partition-equal-subset-sum]: https://leetcode.com/problems/partition-equal-subset-sum/
 
