@@ -9,11 +9,11 @@
 | Easy     | 122. [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) |   [Go](122.best-time-to-buy-and-sell-stock-ii.go) |
 | Medium   | 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)                                         |   [Go](maximal_square.go)                     |
 | Medium   | 279. [Perfect Squares](https://leetcode.com/problems/perfect-squares/)                                       |   [Go](perfect_squares.go)                    |
-| Medium   | 309. [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) |   [Go](309.best-time-to-buy-and-sell-stock-with-cooldown.go)  |
+| Medium   | 309. [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)                   |   [Go](309.best-time-to-buy-and-sell-stock-with-cooldown.go)  |
 | Hard     | 403. [Frog Jump](https://leetcode.com/problems/frog-jump/)   |   [Go](frog_jump.go)                          |
-| 416.     | [Partition Equal Subset Sum][partition-equal-subset-sum]     |   [Go](partition_equal_subset_sum.go)         |
+| Medium   | 416. [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)                 |   [Go](partition_equal_subset_sum.go)         |
+| Medium   | 714. [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)     |   [Go](714.best-time-to-buy-and-sell-stock-with-transaction-fee.go) |
 
-[partition-equal-subset-sum]: https://leetcode.com/problems/partition-equal-subset-sum/
 
 ## 279. Perfect Squares
 计算每一个小于n的平方根组合
