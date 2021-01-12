@@ -1,4 +1,4 @@
-package main
+package breadth_first_search
 
 func canFinish(numCourses int, prerequisites [][]int) bool {
 	indegrees := make(map[int]int)

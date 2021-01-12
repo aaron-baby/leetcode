@@ -1,4 +1,4 @@
-package main
+package breadth_first_search
 
 import "testing"
 
