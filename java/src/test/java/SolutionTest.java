@@ -1,4 +1,4 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SolutionTest {
     @Test
-    public void TestLevelOrder(){
+    void levelOrder() {
         TreeNode r = new TreeNode(3);
         r.left = new TreeNode(9);
         TreeNode rs = new TreeNode(20);
