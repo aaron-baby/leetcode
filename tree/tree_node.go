@@ -34,13 +34,13 @@ func SameTree(a *TreeNode, b *TreeNode) bool {
 	return false
 }
 
-func insertNode(s []interface{}, root *TreeNode, i int, l int) *TreeNode {
+func InsertNode(s []interface{}, root *TreeNode, i int, l int) *TreeNode {
 	if i < l && s[i] != nil {
 		root = &TreeNode{
 			Val: s[i].(int),
 		}
-		root.Left = insertNode(s, root.Left, 2*i+1, l)
-		root.Right = insertNode(s, root.Right, 2*i+2, l)
+		root.Left = InsertNode(s, root.Left, 2*i+1, l)
+		root.Right = InsertNode(s, root.Right, 2*i+2, l)
 
 	}
 

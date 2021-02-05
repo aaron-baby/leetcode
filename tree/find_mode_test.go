@@ -22,13 +22,13 @@ func TestFindMode(t *testing.T) {
 
 	var r1, r2 *TreeNode
 	s := []interface{}{1, nil, 2}
-	r1 = insertNode(s, r1, 0, len(s))
+	r1 = InsertNode(s, r1, 0, len(s))
 	got = findMode(r1)
 	want = []int{2, 1}
 	a.ElementsMatch(got, want)
 
 	s = []interface{}{2, 1}
-	r2 = insertNode(s, r2, 0, len(s))
+	r2 = InsertNode(s, r2, 0, len(s))
 	got = findMode(r2)
 	want = []int{2, 1}
 	a.ElementsMatch(got, want)
