@@ -34,6 +34,7 @@ func SameTree(a *TreeNode, b *TreeNode) bool {
 	return false
 }
 
+// TODO fix bug here
 func InsertNode(s []interface{}, root *TreeNode, i int, l int) *TreeNode {
 	if i < l && s[i] != nil {
 		root = &TreeNode{
