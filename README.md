@@ -3,8 +3,7 @@ Run Python unittest
 python3.9 -m unittest
 ```
 
-Run Java project
+Run project unittest
 ```
-cd java
-./gradlew test
+go test ./...
 ```
