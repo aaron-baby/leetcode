@@ -7,6 +7,7 @@
 | Medium   | 64. [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)                                |   [Go](64.minimum-path-sum.go)               |
 | Medium   | 91. [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                |   [Go](91.decode-ways.go)                         |
 | Easy     | 122. [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) |   [Go](122.best-time-to-buy-and-sell-stock-ii.go) |
+| Medium   | 152. [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                     |   [Go](152.maximum-product-subarray.go)       |
 | Medium   | 198. [House Robber](https://leetcode.com/problems/house-robber/)                                             |   [Go](198.house-robber.go)                   |
 | Medium   | 213. [House Robber II](https://leetcode.com/problems/house-robber-ii/)                                       |   [Go](213.house-robber-ii.go)                |
 | Medium   | 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)                                         |   [Go](maximal_square.go)                     |
