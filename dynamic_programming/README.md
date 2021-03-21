@@ -6,6 +6,7 @@
 | Medium   | 63. [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                                  |   [Go](63.unique-paths-ii.go)                |
 | Medium   | 64. [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)                                |   [Go](64.minimum-path-sum.go)               |
 | Medium   | 91. [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                |   [Go](91.decode-ways.go)                         |
+| Medium   | 95. [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)            |   [Go](95.unique-binary-search-trees-ii.go)       |
 | Easy     | 122. [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) |   [Go](122.best-time-to-buy-and-sell-stock-ii.go) |
 | Medium   | 152. [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                     |   [Go](152.maximum-product-subarray.go)       |
 | Medium   | 198. [House Robber](https://leetcode.com/problems/house-robber/)                                             |   [Go](198.house-robber.go)                   |
