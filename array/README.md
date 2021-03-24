@@ -6,7 +6,7 @@
 | Medium   | 73. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)               | [Go](73.set-matrix-zeroes.go)           |
 | Medium   | 238. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [Go](product_of_array.go)              |
 | Easy     | 283. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                   | [Go](move-zeroes.go)                   |
-| Medium   | 287. [Find the Duplicate Number][find-the-duplicate-number]                             | [Go](find_the_duplicate_number.go)      |
+| Medium   | 287. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)       | [Go](find_the_duplicate_number.go)     |
+| Easy     | 1534. [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/)         | [Go](1534.count-good-triplets.go)       |
 
 [median-of-two-sorted-arrays]: https://leetcode.com/problems/median-of-two-sorted-arrays/
-[find-the-duplicate-number]: https://leetcode.com/problems/find-the-duplicate-number/
