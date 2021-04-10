@@ -12,10 +12,12 @@
 | Medium | 47. [Permutations II](https://leetcode.com/problems/permutations-ii/)                                             | [Go](permutations-ii.go)            |
 | Hard   | 51. [N-Queens](https://leetcode.com/problems/n-queens/)                                                           | [Go](n_queens.go)                   |
 | Hard   | 52. [N-Queens II](https://leetcode.com/problems/n-queens-ii/)                                                     | [Go](n-queens-ii.go)                |
+| Medium | 77. [Combinations](https://leetcode.com/problems/combinations/)                                                   | [Go](77.combinations.go)            |
 | Medium | 79. [Word Search](https://leetcode.com/problems/word-search/)                                                     | [Go](79.word-search.go)                       |
 | Medium | 89. [Gray Code](https://leetcode.com/problems/gray-code/)                                                         | [Go](89.gray-code.go)                         |
 | Medium | 90. [Subsets II](https://leetcode.com/problems/subsets-ii/)                                                       | [Go](90.subsets-ii.go)                        |
-| Hard   | 996. [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)                      | [Go](996.number-of-squareful-arrays.go)       |
+| Hard   | 140. [Word Break II](https://leetcode.com/problems/word-break-ii/)                                                | [Go](90.subsets-ii.go)                        |
+| Hard   | 996. [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)                      | [Go](140.word-break-ii.go)          |
 
 ## 52. N-Queens II
 Basically, we have to ensure 4 things:
